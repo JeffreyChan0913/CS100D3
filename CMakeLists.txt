@@ -31,12 +31,12 @@ endif()
 ########################################################
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -w")
-file(GLOB executables "../*cpp")
+set(executables initialTestRun m1FactAssert m2FactExpect)
 foreach(exe ${executables})
 	add_executable(${exe} ${exe}.cpp)
 	target_link_libraries(${exe} gtest_main)
 	target_include_directories(${exe}
-		PUBLIC ../googletest/include/
-		PUBLIC ../googletest/
+		PRIVATE ../googletest/include/
+		PRIVATE ../googletest/
 	)
 endforeach()
