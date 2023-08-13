@@ -11,4 +11,4 @@ use ```./run``` to create the build folder
 
 Remove build folder ```./removebuild```
 
-Use [Guide](...) to go thru all the code.
+Use [Guide](...) to go thru all the everything.
