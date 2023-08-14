@@ -1,12 +1,13 @@
 #!/bin/sh
-echo "Initializing the script"
-echo "Creating build directory"
+GRN='\033[32;1m'
+BLUE='\033[34;1m'
+NC="\033[0m"
+echo "${GRN}Initializing ${NC}the ${BLUE}script${NC}"
+echo "${GRN}Creating ${BLUE}build directory${NC}$"
 mkdir build
-echo  "Switching to build folder"
+echo  "${GRN}Switching to ${BLUE}build folder${NC}"
 cd build
-echo  "cmaking your file"
+echo  "${GRN}cmake .. -- basic log${NC}"
 cmake ..
-echo  "make your file"
+echo  "${GRN}make -- basic log${NC}"
 make
-echo "list build directory"
-ls -al

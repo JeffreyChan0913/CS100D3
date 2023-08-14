@@ -4,11 +4,14 @@
 
 Details about [GoogleTest Repo](https://github.com/google/googletest).
 
-use ```./run``` to create the build folder
-1. ```./initialTestRun```
-2. ```./m1FactAssert```
-3. ```./m2FactExpect```
+1. ```sh script/mkRun.sh```
+2. ```./run
+3. Test and see if everything is running as expected: ```./initialTestRun```
+4. Lecture demo: ```./814_dirty```
+5. Lecture demo: ```./814_clean```
+4. Discussion demo: ```./m1FactAssert```
+5. Discussion demo: ```./m2FactExpect```
 
-Remove build folder ```./removebuild```
+After finish going thru the code, run the folloing to remove the build folder ```./removebuild```
 
 Use [Guide](...) to go thru all the everything.

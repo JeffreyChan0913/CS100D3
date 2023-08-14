@@ -31,7 +31,7 @@ endif()
 ########################################################
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -w")
-set(executables initialTestRun m1FactAssert m2FactExpect)
+set(executables InitialTestRun 814_clean 814_dirty m1FactAssert m2FactExpect)
 foreach(exe ${executables})
 	add_executable(${exe} ${exe}.cpp)
 	target_link_libraries(${exe} gtest_main)
