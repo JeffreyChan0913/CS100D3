@@ -31,12 +31,16 @@ endif()
 ########################################################
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -w")
-set(executables InitialTestRun 814_clean 814_dirty m1FactAssert m2FactExpect)
+set(executables InitialTestRun 814_clean 814_dirty m1FactAssert m2FactExpect m3Class m3Class_dirty m5GMock)
+
 foreach(exe ${executables})
 	add_executable(${exe} ${exe}.cpp)
 	target_link_libraries(${exe} gtest_main)
+	target_link_libraries(${exe} gmock_main)
 	target_include_directories(${exe}
-		PRIVATE ../googletest/include/
-		PRIVATE ../googletest/
+		PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/googletest/include/
+		PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/googletest/
+		PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/googlemock/include/
+		PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/googlemock/
 	)
 endforeach()

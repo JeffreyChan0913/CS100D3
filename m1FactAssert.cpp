@@ -10,6 +10,7 @@ TEST(FactorialTest,TestCaseOne){
     ASSERT_TRUE(factorial(0) == 1);
     ASSERT_TRUE(factorial(1) == 1);
     ASSERT_TRUE(factorial(2) == 2);
+    ASSERT_TRUE(factorial(3) == 6);
     ASSERT_TRUE(factorial(10) == 3628800);
     ASSERT_TRUE(factorial(15) == 1307674368000);
     ASSERT_TRUE(factorial(18) == 6402373705728000);
