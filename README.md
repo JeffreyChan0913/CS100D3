@@ -41,7 +41,7 @@ We are repeated what we have been doing, however; this will be in OOP format.
 ### GMock
 1. it is really using the following idea ```fake it until make it```. It is testing if things are
 wired correctly or not or can a particular api being called. 
-2. most important, make sure the CMakeList.txt is set up correctly. 
+2. most importantly, make sure the CMakeList.txt is set up correctly. 
 
 After finish going thru the code, run the folloing to remove the build folder ```./removebuild```
 
