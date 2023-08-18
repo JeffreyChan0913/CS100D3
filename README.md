@@ -17,8 +17,10 @@ Test and see if everything is running as expected: ```./initialTestRun```.
 5. We must call ```RUN_ALL_TEST()``` once. Calling it multiple time will confused the googltest frame work. 
 
 ### Lecture Demo 1
-Run the lecture demo: ```./814_dirty```, what do you see?
-1. can you identify the problem?
+Assume you have written a function that retuns what ever is being passed in to the function, will
+```814_dirty.cpp``` work?
+
+1. can you identify the problem if there is any?
 2. how can we solve it? 
 
 ### Lecture Demo 2
