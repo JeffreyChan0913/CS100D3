@@ -13,6 +13,7 @@ class Person{
 	private:
 		int _age,_HrlyRate;
 };
+
 class MockPerson : public Person{
 	public:
 		MOCK_METHOD(double,WageCalculator,(int hr));
@@ -27,6 +28,7 @@ TEST(PersonTest,APITestingOne){
 	EXPECT_CALL(*person, getAge()).Times(3);
 	person->play();
 }
+
 int main(int argc, char *argv[]){
     testing::InitGoogleTest(&argc,argv);
     return RUN_ALL_TESTS();

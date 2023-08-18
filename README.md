@@ -18,14 +18,11 @@ Test and see if everything is running as expected: ```./initialTestRun```.
 
 ### Lecture Demo 1
 Assume you have written a function that retuns what ever is being passed in to the function, will
-```814_dirty.cpp``` work?
+```814_dirty.cpp``` work as we expected?
 
 1. can you identify the problem if there is any?
 2. how can we solve it? 
-
-### Lecture Demo 2
-1. How can we create a test to test positive and negative values?
-2. can we create two different tests for that?
+3. can we write a better tests to stress our function?
 
 ### Discussion Demo m1
 Assuming we are asked to create a function that calculate factorial, and the given input, $x\leq18$. 
@@ -39,11 +36,14 @@ Run the demo m1FactAssert, ```./m1FactAssert```
 
 ### m3Class
 We are repeated what we have been doing, however; this will be in OOP format.
+1. look at ```cat m3Class.cpp``` to see what is going on.
+2. ```cd build && ./m3Class```
 
 ### GMock
 1. it is really using the following idea ```fake it until make it```. It is testing if things are
 wired correctly or not or can a particular api being called. 
 2. most importantly, make sure the CMakeList.txt is set up correctly. 
+3. ```cat m5GMock.cpp && cd build && ./m5GMock```
 
 After finish going thru the code, run the folloing to remove the build folder ```./removebuild```
 
